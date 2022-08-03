@@ -1,0 +1,25 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ausgabe{
+    grid-column: 1/1;
+}
+
+.hinterer_teil{
+    grid-column: 1/2;
+}
+
+
+

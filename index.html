@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,35 @@
     <title>String Separation Machine</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
+    <h1>Zeichenkettentrennungsmaschine</h1>
+
+    <main>
+        <form onsubmit="return false" action="#">
+            <p>Zu trennende Zeichenkette</p>
+            <input id="inputTxt" type="text">
+            <h2>Zeichenkette für die Trennungsposition</h2>
+            <input type="text" id="zeichenInput">
+            <input value='davor' id='davorTrennen' type="radio" name="radio">
+            <label>davor trennen</label>
+            <input value='danach' id="danachTrennen" type="radio" name='radio'>
+            <label>danach trennen</label>
+            <button onclick="schneiden()">Datei absenden</button>
+        </form>
+    </main>
+
+    <div class="flex">
+        <div>
+            <p>Vorder Teil</p>
+            <p id="ausgabeVorne"></p>
+        </div>
+        <div>
+            <p>Hinten</p>
+            <p id="ausgabeHinten"></p>
+        </div>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
